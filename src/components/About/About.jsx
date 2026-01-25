@@ -1,31 +1,44 @@
+import { motion } from "framer-motion"
+
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 bg-white">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Sobre mí</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Soy desarrollador web con foco en crear interfaces claras,
-            modernas y funcionales. Me gusta contemplar las necesidades de las personas
-            y crear un sistema acorde, funcional y práctico.
+    <section id="about" className="py-24 bg-white">
+      <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Texto */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Sobre mí
+          </h2>
 
-            Original:
-            Soy desarrollador frontend con foco en crear interfaces claras,
-            modernas y funcionales. Me gusta escribir código limpio, reusable
-            y pensar cada detalle desde la experiencia del usuario.
+          <p className="text-gray-500 mb-6 leading-relaxed">
+            Soy desarrollador web especializado en crear
+            interfaces modernas, claras y funcionales. Me interesa escribir
+            código limpio, mantenible y pensado desde la experiencia del usuario.
           </p>
-          <p className="text-gray-600 leading-relaxed">
-            Tengo conocimiento en frontend y backend, así como en data base.
 
-            Original: 
-            Trabajo principalmente con React y disfruto transformar ideas en
-            productos reales listos para producción.
+          <p className="text-gray-500 leading-relaxed">
+            Mi formación y experiencia me permiten entender el flujo completo de
+            una aplicación web, colaborar en equipos de trabajo y adaptarme
+            fácilmente a distintos proyectos y entornos.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="w-full h-64 md:h-80 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400">
+        {/* Bloque visual */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="w-full h-72 rounded-2xl bg-gray-100 flex items-center justify-center text-gray-400"
+        >
           Foto / Ilustración
-        </div>
+        </motion.div>
       </div>
     </section>
   )
