@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+    * {
+        transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    }
+}
