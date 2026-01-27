@@ -17,9 +17,9 @@ export default function About() {
           </h2>
 
           <p className="text-gray-500 mb-6 leading-relaxed">
-            Soy desarrollador web especializado en crear
-            interfaces modernas, claras y funcionales. Me interesa escribir
-            código limpio, mantenible y pensado desde la experiencia del usuario.
+            Me dedico al desarrollo web, con experiencia en la creación de
+            interfaces y aplicaciones utilizando tecnologías modernas y buenas
+            prácticas de programación.
           </p>
 
           <p className="text-gray-500 leading-relaxed">
