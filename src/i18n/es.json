@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Sobre mí",
+    "skills": "Skills",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "role": "Desarrollador Web",
+    "title": "Facundo Damián Fagnano",
+    "desc": "Trabajo en soluciones de punta a punta: frontend, backend, APIs y bases de datos, combinando buenas prácticas, rendimiento y foco en el negocio.",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Contacto",
+    "tags": ["Frontend & Backend", "APIs · Bases de datos", "React · Angular", "PHP · .NET · Java"]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Perfil técnico con enfoque en desarrollo web completo y soluciones escalables.",
+    "p1": "Me dedico al desarrollo web, con experiencia en la creación de interfaces y aplicaciones utilizando tecnologías modernas y buenas prácticas de programación.",
+    "p2": "Mi formación y experiencia me permiten entender el flujo completo de una aplicación web, colaborar en equipos de trabajo y adaptarme fácilmente a distintos proyectos y entornos."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tecnologías y herramientas con las que trabajo."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Proyectos recientes y en desarrollo.",
+    "cardTitle": "Portfolio profesional",
+    "cardDesc": "Sitio web desarrollado desde cero con React, Vite y Tailwind CSS. Diseño minimalista, responsive y base escalable para sumar nuevas secciones y funcionalidades.",
+    "code": "Ver código",
+    "demo": "Demo en desarrollo"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tenés un proyecto en mente o simplemente querés ponerte en contacto? Estoy abierto a nuevas oportunidades y colaboraciones.",
+    "email": "Enviarme un email"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "madeWith": "Hecho con"
+  }
+}

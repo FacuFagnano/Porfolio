@@ -1,9 +1,12 @@
 import { motion } from "framer-motion"
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
+import { useLanguage } from "../../context/LanguageContext"
+
 
 export default function Contact() {
+    const { t } = useLanguage()
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Título */}
         <motion.div
@@ -12,13 +15,12 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Contacto
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-gray-100">
+            {t.contact.title}
           </h2>
 
-          <p className="text-gray-500 mb-12 max-w-xl mx-auto">
-            ¿Tenés un proyecto en mente o simplemente querés ponerte en contacto?
-            Estoy abierto a nuevas oportunidades y colaboraciones.
+          <p className="text-gray-500 mb-12 max-w-xl mx-auto dark:text-gray-300">
+            {t.contact.subtitle}
           </p>
         </motion.div>
 
@@ -33,9 +35,9 @@ export default function Contact() {
           {/* Email */}
           <a
             href="mailto:facu.fagnano@gmail.com"
-            className="px-8 py-4 rounded-xl bg-sky-500 text-white font-medium hover:bg-sky-600 transition"
+            className="px-6 py-3 rounded-xl bg-sky-500 text-white font-medium hover:bg-sky-600 transition"
           >
-            Enviarme un email
+            {t.contact.email}
           </a>
 
           {/* Íconos */}

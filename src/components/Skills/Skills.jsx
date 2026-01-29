@@ -12,6 +12,7 @@ import {
   FaTools,
 } from "react-icons/fa"
 import { SiDotnet, SiMysql, SiMongodb, SiVite } from "react-icons/si"
+import { useLanguage } from "../../context/LanguageContext"
 
 const groups = [
   {
@@ -84,12 +85,13 @@ function SkillCard({ title, skills }) {
 }
 
 export default function Skills() {
+  const { t } = useLanguage()
   return (
-    <section id="skills" className="py-24 bg-gray-50">
+    <section id="skills" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Skills</h2>
-        <p className="text-gray-500 mb-12">
-          Tecnologías & Herramientas
+        <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-gray-100">{t.skills.title}</h2>
+        <p className="text-gray-500 mb-12 dark:text-gray-300">
+          {t.skills.subtitle}
         </p>
 
         <motion.div

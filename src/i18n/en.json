@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Web Developer",
+    "title": "Facundo Damián Fagnano",
+    "desc": "End-to-end solutions: frontend, backend, APIs and databases, combining best practices, performance and business focus.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Contact",
+    "tags": ["Frontend & Backend", "APIs & Databases", "React · Angular", "PHP · .NET · Java"]
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Technical profile focused on full web development and scalable solutions.",
+    "p1": "Focused on Web Development, I specialize in building interfaces and applications powered by modern tech stacks and clean code principles.",
+    "p2": "I have a solid understanding of the full web application lifecycle, making me a versatile team player who can quickly adapt to new challenges and environments."
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technologies and tools I work with."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Recent and in-progress work.",
+    "cardTitle": "Professional portfolio",
+    "cardDesc": "Built from scratch with React, Vite and Tailwind CSS. Minimal design, responsive layout and a scalable base for future features.",
+    "code": "View code",
+    "demo": "Demo in progress"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have an idea or want to get in touch? I’m open to new opportunities and collaborations.",
+    "email": "Email me"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "Built with"
+  }
+}

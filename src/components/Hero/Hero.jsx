@@ -1,59 +1,70 @@
 import { motion } from "framer-motion"
+import { FiArrowUpRight } from "react-icons/fi"
+import CodeHero from "./CodeHero"
+import { useLanguage } from "../../context/LanguageContext"
 
 export default function Hero() {
+  const { t } = useLanguage()
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center bg-white"
+      className="min-h-screen pt-36 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
     >
-      <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-        
-        {/* Texto */}
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center min-h-[calc(100vh-9rem)]">
+        {/* Texto (izquierda) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-sky-500 font-medium mb-3">
-            Desarrollador Web
+          <p className="text-sky-600 font-medium mb-4">
+            {t.hero.role}
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-            Facundo Damián Fagnano
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight dark:text-gray-100">
+            {t.hero.title}
           </h1>
 
-          <p className="text-xl text-gray-600 mt-6 max-w-xl">
-            Diseño y desarrollo sitios web modernos, funcionales y pensados
-            para ofrecer una excelente experiencia de usuario.
+          <p className="text-xl text-gray-600 mt-8 leading-relaxed max-w-xl dark:text-gray-300">
+            {t.hero.desc}
           </p>
 
-
-          <div className="flex gap-4 mt-10">
+          {/* CTAs */}
+          <div className="flex flex-wrap gap-4 mt-12">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-xl bg-sky-500 text-white font-medium hover:bg-sky-600 transition"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500 text-white font-medium hover:bg-sky-600 transition"
             >
-              Ver proyectos
+              {t.hero.ctaProjects}
+              <FiArrowUpRight />
             </a>
 
             <a
               href="#contact"
-              className="px-6 py-3 rounded-xl border border-gray-300 text-gray-700 hover:border-gray-500 transition"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-gray-300 text-gray-700 hover:border-gray-500 transition dark:text-gray-200"
             >
-              Contacto
+              {t.hero.ctaContact}
+              <FiArrowUpRight className="text-gray-400" />
             </a>
+          </div>
+
+          {/* Tech summary */}
+          <div className="mt-12 flex flex-wrap gap-2">
+            {t.hero.tags.map((t) => (
+              <span
+                key={t}
+                className="text-xs px-3 py-1 rounded-full bg-white border border-gray-200 text-gray-600"
+              >
+                {t}
+              </span>
+            ))}
           </div>
         </motion.div>
 
-        {/* Visual */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="hidden md:flex justify-center"
-        >
-          <div className="w-72 h-72 rounded-full bg-gradient-to-br from-sky-400 to-sky-600 opacity-20" />
-        </motion.div>
+        {/* CodeHero (derecha) */}
+        <div className="hidden md:block">
+          <CodeHero />
+        </div>
       </div>
     </section>
   )

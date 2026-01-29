@@ -4,10 +4,16 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+  overflow-y: scroll;
 }
 
 section {
   scroll-margin-top: 96px; 
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 @layer base {
