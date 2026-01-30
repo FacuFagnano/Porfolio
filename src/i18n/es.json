@@ -22,7 +22,12 @@
   },
   "skills": {
     "title": "Skills",
-    "subtitle": "Tecnologías y herramientas con las que trabajo."
+    "subtitle": "Tecnologías y herramientas con las que trabajo.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend & Bases de datos",
+      "tools": "Herramientas & Metodologías"
+    }
   },
   "projects": {
     "title": "Proyectos",
