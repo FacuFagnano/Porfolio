@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen pt-36 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+      className="min-h-screen pt-36 pb-28 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center min-h-[calc(100vh-9rem)]">
         {/* Texto (izquierda) */}
