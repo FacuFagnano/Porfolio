@@ -61,8 +61,8 @@ const item = {
 
 function SkillChip({ name, Icon }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-700 shadow-sm hover:-translate-y-0.5 hover:shadow-md transition">
-      <Icon className="text-gray-500" />
+    <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-2 text-sm text-gray-700 dark:text-gray-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md transition">
+      <Icon className="text-gray-500 dark:text-gray-400" />
       {name}
     </span>
   )
@@ -71,11 +71,11 @@ function SkillChip({ name, Icon }) {
 function SkillCard({ title, skills }) {
   return (
     <motion.div
-      className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition"
+      className="rounded-2xl border border-gray-200 bg-white dark:bg-gray-950 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg dark:hover:shadow-black/50 transition"
       variants={item}
     >
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">{title}</h3>
-      <div className="flex flex-wrap gap-3">
+      <h3 className="text-lg font-semibold text-gray-900 mb-4 dark:text-gray-100">{title}</h3>
+      <div className="flex flex-wrap justify-center gap-3">
         {skills.map((s) => (
           <SkillChip key={s.name} name={s.name} Icon={s.icon} />
         ))}
@@ -90,7 +90,7 @@ export default function Skills() {
     <section id="skills" className="py-24 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold text-gray-900 mb-4 dark:text-gray-100">{t.skills.title}</h2>
-        <p className="text-gray-500 mb-12 dark:text-gray-300">
+        <p className="text-gray-500 mb-12 dark:text-gray-400">
           {t.skills.subtitle}
         </p>
 
