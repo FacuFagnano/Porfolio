@@ -16,7 +16,7 @@ import { useLanguage } from "../../context/LanguageContext"
 
 const groups = [
   {
-    title: "Frontend",
+    key: "frontend",
     skills: [
       { name: "HTML", icon: FaHtml5 },
       { name: "CSS / Tailwind", icon: FaCss3Alt },
@@ -26,7 +26,7 @@ const groups = [
     ],
   },
   {
-    title: "Backend / DB",
+    key: "backend",
     skills: [
       { name: "PHP", icon: FaPhp },
       { name: "Laravel", icon: FaLaravel },
@@ -37,7 +37,7 @@ const groups = [
     ],
   },
   {
-    title: "Tools / Other",
+    key: "tools",
     skills: [
       { name: "Git & GitHub", icon: FaGitAlt },
       { name: "VS Code", icon: FaTools },
@@ -102,7 +102,7 @@ export default function Skills() {
           viewport={{ once: true, amount: 0.2 }}
         >
           {groups.map((g) => (
-            <SkillCard key={g.title} title={g.title} skills={g.skills} />
+            <SkillCard key={g.key} title={t.skills.groups[g.key]} skills={g.skills} />
           ))}
         </motion.div>
       </div>
