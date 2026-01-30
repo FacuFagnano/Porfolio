@@ -19,7 +19,7 @@ export default function Contact() {
             {t.contact.title}
           </h2>
 
-          <p className="text-gray-500 mb-12 max-w-xl mx-auto dark:text-gray-300">
+          <p className="text-gray-500 mb-12 max-w-xl mx-auto dark:text-gray-400">
             {t.contact.subtitle}
           </p>
         </motion.div>

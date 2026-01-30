@@ -53,7 +53,7 @@ export default function Hero() {
             {t.hero.tags.map((t) => (
               <span
                 key={t}
-                className="text-xs px-3 py-1 rounded-full bg-white border border-gray-200 text-gray-600"
+                className="text-xs px-3 py-1 rounded-full bg-white border border-gray-200 text-gray-600 transition-all duration-200 hover:-translate-y-0.5 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200"
               >
                 {t}
               </span>
